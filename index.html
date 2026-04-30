@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandaru Kanchana Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="logo">SK</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#gis">GIS</a></li>
+    <li><a href="#ir">IR</a></li>
+    <li><a href="#travel">Travel</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Sandaru Kanchana</h1>
+  <p>GIS Explorer | IR Researcher | Traveller</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a GIS and International Relations undergraduate at the University of Peradeniya.
+    My passion lies in exploring spatial data, global politics, and storytelling through travel.
+  </p>
+
+  <div class="skills">
+    <div class="card">Mapping & GIS Analysis</div>
+    <div class="card">Research & Policy Analysis</div>
+    <div class="card">Storytelling & Writing</div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+  <h2>Portfolio</h2>
+
+  <div class="grid">
+    <div class="card" onclick="openModal('Research Project')">Research Projects</div>
+    <div class="card" onclick="openModal('Story Maps')">Story Maps</div>
+    <div class="card" onclick="openModal('Public Content')">Public Content</div>
+    <div class="card" onclick="openModal('Travel Media')">Travel Vlogs</div>
+  </div>
+</section>
+
+<!-- GIS -->
+<section id="gis" class="section gis">
+  <h2>GIS Projects</h2>
+  <p>Spatial analysis, mapping, and geospatial storytelling.</p>
+</section>
+
+<!-- IR -->
+<section id="ir" class="section ir">
+  <h2>International Relations</h2>
+  <p>Research papers, geopolitical analysis, and policy insights.</p>
+</section>
+
+<!-- TRAVEL -->
+<section id="travel" class="section travel">
+  <h2>Travel & Stories</h2>
+  <p>Journeys, experiences, and storytelling through visuals.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <div class="socials">
+    <a href="https://www.linkedin.com/">LinkedIn</a>
+    <a href="https://www.fiverr.com/">Fiverr</a>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()">&times;</span>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
